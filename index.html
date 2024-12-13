@@ -51,8 +51,8 @@
                 0 0 15px #00ffff,
                 0 0 20px #00ff80,
                 0 0 25px #00ff80;
-            display: flex;
-            flex-direction: column; /* 文字竖排显示 */
+            writing-mode: vertical-rl; /* 垂直排版 */
+            text-orientation: mixed;
         }
         .left {
             left: 10px;
@@ -82,29 +82,11 @@
     </style>
 </head>
 <body>
-    <h1>李柔飞李柔飞世界第一李柔飞</h1>
+    <h1>李柔飞！李柔飞！世界第一李柔飞</h1>
     <div class="container">
-        <div class="left">
-            <span>李</span>
-            <span>柔</span>
-            <span>飞</span>
-            <span>世</span>
-            <span>界</span>
-            <span>第</span>
-            <span>一</span>
-            <span>美</span>
-        </div>
+        <div class="left">李柔飞世界第一美</div>
         <img src="friend.jpg" alt="我的朋友">
-        <div class="right">
-            <span>李</span>
-            <span>🥩</span>
-            <span>飞</span>
-            <span>是</span>
-            <span>晋</span>
-            <span>晨</span>
-            <span>的</span>
-            <span>狗</span>
-        </div>
+        <div class="right">李🥩飞是晋晨的狗</div>
     </div>
 </body>
 </html>
