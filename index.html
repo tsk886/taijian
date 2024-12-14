@@ -16,32 +16,22 @@
         h1 {
             font-size: 48px;
             font-weight: bold;
+            color: #ff0000; /* 红色字体 */
             text-shadow: 
-                0 0 10px #ff00ff,
-                0 0 20px #ff00ff,
-                0 0 30px #ff00ff,
-                0 0 40px #ff00ff,
-                0 0 50px #ff0080,
-                0 0 60px #ff0080;
+                0 0 10px #ff0000,
+                0 0 20px #ff0000,
+                0 0 30px #ff0000,
+                0 0 40px #ff0000;
             animation: glow 2s infinite alternate;
         }
         .container {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between; /* 左右分布 */
             align-items: center;
-            margin: 20px;
-            position: relative;
-        }
-        img {
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 0 20px #ff00ff;
+            margin: 20px auto;
+            width: 100%;
         }
         .left, .right {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
             font-size: 18px;
             line-height: 1.5;
             color: white;
@@ -49,35 +39,21 @@
                 0 0 5px #00ffff,
                 0 0 10px #00ffff,
                 0 0 15px #00ffff,
-                0 0 20px #00ff80,
-                0 0 25px #00ff80;
+                0 0 20px #00ff80;
             writing-mode: vertical-rl; /* 垂直排版 */
             text-orientation: mixed;
         }
         .left {
-            left: 10px;
+            margin-left: 10px; /* 靠最左 */
         }
         .right {
-            right: 10px;
+            margin-right: 10px; /* 保持最右 */
         }
-        @keyframes glow {
-            from {
-                text-shadow: 
-                    0 0 10px #ff00ff,
-                    0 0 20px #ff00ff,
-                    0 0 30px #ff00ff,
-                    0 0 40px #ff00ff,
-                    0 0 50px #ff0080,
-                    0 0 60px #ff0080;
-            }
-            to {
-                text-shadow: 
-                    0 0 20px #00ffff,
-                    0 0 30px #00ffff,
-                    0 0 40px #00ffff,
-                    0 0 50px #00ff80,
-                    0 0 60px #00ff80;
-            }
+        img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #ff00ff;
         }
     </style>
 </head>
